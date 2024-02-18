@@ -1,6 +1,6 @@
 import React from 'react'
 import ProfileCard from './ProfileCard'
-import andipic from './assets/andi.jpg'
+
 
 export default function Teams() {
   return (
