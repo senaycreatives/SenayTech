@@ -10,11 +10,11 @@ export default function Teams() {
         </div>
     <div  class="  flex font-medium items-center flex-wrap  ">
     
-       <ProfileCard image={"https://api.lorem.space/image/face?w=120&h=120&hash=bart8"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
-       <ProfileCard image={"https://api.lorem.space/image/face?w=120&h=120&hash=brt89fe"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
-       <ProfileCard image={"https://api.lorem.space/image/face?w=120&h=120"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
-       <ProfileCard image={"https://api.lorem.space/image/face?w=120&h=120&hash=bart89f"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
-       <ProfileCard image={"https://api.lorem.space/image/face?w=120&h=120&hash=bart8e"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
+       <ProfileCard image={"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
+       <ProfileCard image={"https://images.pexels.com/photos/220451/pexels-photo-220451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
+       <ProfileCard image={"https://images.pexels.com/photos/220423/pexels-photo-220423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
+       <ProfileCard image={" https://images.pexels.com/photos/220458/pexels-photo-220458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
+       <ProfileCard image={" https://images.pexels.com/photos/220445/pexels-photo-220445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
     </div></div>
   )
 }

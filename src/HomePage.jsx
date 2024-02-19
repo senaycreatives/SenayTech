@@ -112,7 +112,7 @@ const sendMessage = () => {
   }, [currentQuestion, questions]);
 
   return (
-    <div className=' w-[96%] relative  flex-col flex overflow-hidden   rounded-md  shadow-sm shadow-gray-100 h-[1500px]'>
+    <div className=' w-[96%] relative  flex-col flex overflow-hidden   rounded-md   h-[1500px]'>
       {openchat &&  
         <div className='w-[400px] backdrop-blur-sm bg-opacity-25 overflow-hidden shadow-white shadow-sm h-[350px] z-30 bottom-[53px] right-[50px] rounded-md fixed bg-black flex flex-col items-center justify-between '>
           <div  className=' chat w-full h-[300px]  overflow-y-auto flex flex-col '>

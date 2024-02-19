@@ -16,3 +16,21 @@
  .chat ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+  .myscroll::-webkit-scrollbar {
+    height: 9px;
+  }
+  
+  /* Track */
+ .myscroll ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+ .myscroll::-webkit-scrollbar-thumb {
+    background: rgba(26, 0, 44, 0.37);
+    opacity: 0.5;
+    border-radius: 30px;
+  }
+  .myscroll::-webkit-scrollbar-track {
+    background: rgba(92, 4, 155, 0.466);
+  }

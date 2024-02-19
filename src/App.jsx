@@ -1,22 +1,28 @@
 
+import AboutSenayPage from './AboutSenayPage'
 import './App.css'
 import HeaderComponent from './HeaderComponent'
 import HomePage from './HomePage'
 import Teams from './Teams'
+import Blog from './Blog'
 import logo from './assets/logo.jpg'
 import { Routes, Route } from "react-router-dom"
+import Project from './Project'
 function App() {
  
 
   return (
    
-    <div className=' min-h-screen p-[1%]  overflow-x-hidden flex flex-col items-center justify-center bg-gradient-to-r from-violet-900 via-violet-900 to-black'>
+    <div className=' min-h-screen p-[1%]  overflow-x-hidden flex flex-col items-center justify-center bg-gradient-to-r from-violet-900 via-violet-900 to-violet-900'>
        <HeaderComponent/>
 
     <Routes>
         <Route path="/" element={ <HomePage/> } />
         <Route path="team" element={<Teams/>} />
+        <Route path='aboutsenay' element={<AboutSenayPage/>} />
         <Route path="contact"  />
+        <Route path='blog' element={<Blog/>} />
+        <Route path='Project' element={<Project/>} />
       </Routes>
 
 
