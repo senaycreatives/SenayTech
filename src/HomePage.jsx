@@ -55,7 +55,7 @@ export default function HomePage() {
       additionalInfo: messagesentbyme[3]?.message,
   };
   
-  axios.post('http://localhost:3300/message', { message })
+  axios.post('https://crabby-frog-swimsuit.cyclic.app/message', { message })
   .then((response) => {
      setMessages([
        ...messages,{
