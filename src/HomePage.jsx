@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import websitedev from "./assets/settings.png"
 import appdev from "./assets/app-settings.png"
 import design from "./assets/web-design.png"
-
+import technical from "./assets/technical-support.png"
 import './App.css'
 import animationData from './assets/Animation - 1705334391939.json';
 import chaticon from "./assets/chat.png"
@@ -117,7 +117,7 @@ const sendMessage = () => {
         <div className='w-[400px] backdrop-blur-sm bg-opacity-25 overflow-hidden shadow-white shadow-sm h-[350px] z-30 bottom-[53px] right-[50px] rounded-md fixed bg-black flex flex-col items-center justify-between '>
           <div  className=' chat w-full h-[300px]  overflow-y-auto flex flex-col '>
             {messages?.map((message, index) => (
-              <div key={index} className={` w-[80%] min-h-[50px] rounded-md flex items-center   text-white mt-2 ${message?.sender === 'me' ? 'self-end bg-indigo-700 ' : 'self-start bg-indigo-600'}`}>{message?.message}</div>
+              <div key={index} className={` px-4 w-[80%] min-h-[50px] rounded-md flex items-center  text-[14px]  text-white mt-2 ${message?.sender === 'me' ? 'self-end bg-indigo-700 ' : 'self-start bg-indigo-600'}`}>{message?.message}</div>
             ))}
  
             <div ref={messagesEndRef} className={` w-[80%] min-h-[50px] rounded-md flex items-center   text-white mt-2 ${'ddr' === 'me' ? 'self-end bg-indigo-700 ' : 'self-start '}`}></div>
@@ -219,7 +219,16 @@ const sendMessage = () => {
             initial={{ y: 100}}
             transition={{ type: "spring",delay:0.3, duration:200,stiffness: 100 }}
             whileInView={{y:10}}
-          >.</motion.div>
+          ><img src={technical} className='w-[100px] h-[100px]'/>
+          <p className=' text-gray-200 font-semibold '>Telegram Bot</p>
+          <button
+            class="flex items-center mt-10 gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-gray-200 uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20"
+            type="button">
+            See Projects
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" class="w-5 h-5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+            </svg>
+          </button></motion.div>
         </div>
       </div>
       <div className='w-full mt-[100px] justify-center h-[400px] flex-col items-center flex'>

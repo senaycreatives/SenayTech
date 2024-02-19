@@ -8,6 +8,7 @@ import Blog from './Blog'
 import logo from './assets/logo.jpg'
 import { Routes, Route } from "react-router-dom"
 import Project from './Project'
+import BlogsDetails from './BlogsDetails'
 function App() {
  
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="contact"  />
         <Route path='blog' element={<Blog/>} />
         <Route path='Project' element={<Project/>} />
+        <Route path='blogdetails' element={<BlogsDetails/>}/>
       </Routes>
 
 

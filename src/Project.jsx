@@ -1,21 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 
 export default function Project() {
+    const [catagory,setcatagory]=useState('ReactNative')
   return (
     <div className='min-h-screen w-full'>
         <div className=' w-[80%] flex justify-center items-center'>
         <div className='flex flex-row items-center mt-3'>
-<div className='h-[30px] w-[120px] rounded-full flex items-center justify-center bg-opacity-50 bg-indigo-300'>
+<div onClick={()=>setcatagory('ReactNative')} className={`h-[30px] cursor-pointer  hover:bg-indigo-500 ${catagory==='ReactNative' && 'bg-indigo-700'} w-[120px] rounded-full flex items-center justify-center bg-opacity-50 bg-indigo-300`}>
     <p className='text-white font-semibold'>ReactNative</p>
 </div>
-<div className='h-[30px] w-[120px] rounded-full bg-opacity-50 bg-indigo-300 ml-3 flex items-center justify-center '>
+<div onClick={()=>setcatagory('Django')} className={`h-[30px] w-[120px] cursor-pointer hover:bg-indigo-500 rounded-full bg-opacity-50 ${catagory==='Django' && 'bg-indigo-700'} bg-indigo-300 ml-3 flex items-center justify-center `}>
     <p className='text-white font-semibold'>Django</p>
 </div>
-<div className='h-[30px] w-[120px] rounded-full bg-opacity-50 bg-indigo-300 ml-3 flex items-center justify-center'>
+<div onClick={()=>setcatagory('React')} className={`h-[30px] w-[120px] cursor-pointer hover:bg-indigo-500 rounded-full ${catagory==='React' && 'bg-indigo-700'}  bg-opacity-50 bg-indigo-300 ml-3 flex items-center justify-center`}>
     <p className='text-white font-semibold'>React</p>
 </div>
-<div className='h-[30px] w-[120px] rounded-full bg-opacity-50 bg-indigo-300 ml-3 flex items-center justify-center'>
+<div onClick={()=>setcatagory('Nodejs')} className={`h-[30px] w-[120px] cursor-pointer hover:bg-indigo-500 rounded-full ${catagory==='Nodejs' && 'bg-indigo-700'} bg-opacity-50 bg-indigo-300 ml-3 flex items-center justify-center`}>
     <p className='text-white font-semibold'>Nodejs</p>
 </div>
             </div>
@@ -43,7 +44,7 @@ export default function Project() {
                 <div>
                     <p className='text-white font-bold text-xl mt-3'> Project-Senay Shop  </p>
                     <p className='text-gray-400 font-semibold '> senay shop is online ecommerce website </p>
-                    <div className='h-[40px] w-[80%] flex items-center justify-center rounded-full bg-opacity-50 bg-indigo-300 mt-3'>
+                    <div className='h-[40px]  cursor-pointer  w-[80%] flex items-center justify-center rounded-full bg-opacity-50 bg-indigo-300 mt-3'>
                         <p className='text-white font-semibold'>Read More</p>
                     </div>
                 </div>
