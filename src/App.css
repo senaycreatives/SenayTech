@@ -1,0 +1,18 @@
+.chat::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+ .chat ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+ .chat::-webkit-scrollbar-thumb {
+    background: black;
+  }
+  
+  /* Handle on hover */
+ .chat ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
