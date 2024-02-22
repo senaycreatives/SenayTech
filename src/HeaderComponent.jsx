@@ -37,7 +37,7 @@ export default function HeaderComponent() {
                     </li>
                   
                     <li>
-                         <Link  to="team"  class="block py-2 pr-4 pl-3 hover:text-orange-400 text-white rounded bg-primary-700  lg:bg-transparent lg:text-white lg:p-0 dark:text-white">Contact</Link>
+                         <Link  to="contact"  class="block py-2 pr-4 pl-3 hover:text-orange-400 text-white rounded bg-primary-700  lg:bg-transparent lg:text-white lg:p-0 dark:text-white">Contact</Link>
                     </li>
                 </ul>
             </div>

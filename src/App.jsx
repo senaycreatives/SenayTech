@@ -9,6 +9,8 @@ import logo from './assets/logo.jpg'
 import { Routes, Route } from "react-router-dom"
 import Project from './Project'
 import BlogsDetails from './BlogsDetails'
+import ContactUsPage from './ContactUsPage'
+
 function App() {
  
 
@@ -21,7 +23,7 @@ function App() {
         <Route path="/" element={ <HomePage/> } />
         <Route path="team" element={<Teams/>} />
         <Route path='aboutsenay' element={<AboutSenayPage/>} />
-        <Route path="contact"  />
+        <Route path="contact" element={<ContactUsPage/>} />
         <Route path='blog' element={<Blog/>} />
         <Route path='Project' element={<Project/>} />
         <Route path='blogdetails' element={<BlogsDetails/>}/>
