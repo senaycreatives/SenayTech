@@ -10,7 +10,7 @@ export default function UseFetchCatagory() {
   const fetchData = async () => {
     
     const res = await axios.get(
-      `https://crabby-frog-swimsuit.cyclic.app/catagory`,
+      `https://app.ethiopiantheaterassociation.com/catagory`,
     );
 
     return res;

@@ -10,7 +10,7 @@ export default function UseFetchBlogs() {
   const fetchData = async () => {
     
     const res = await axios.get(
-      `https://crabby-frog-swimsuit.cyclic.app/blog`
+      `https://app.ethiopiantheaterassociation.com/blog`
     );
 
     return res;

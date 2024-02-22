@@ -10,7 +10,7 @@ export default function UseFetchTeams() {
   const fetchData = async () => {
     
     const res = await axios.get(
-      `https://crabby-frog-swimsuit.cyclic.app/admin`
+      `https://app.ethiopiantheaterassociation.com/admin`
     );
 
     return res;
