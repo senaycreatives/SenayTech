@@ -1,8 +1,10 @@
 import React from 'react'
 import ProfileCard from './ProfileCard'
+import UseFetchTeams from './Hooks/UseFetchTeams'
 
 
 export default function Teams() {
+  const { data,error,isLoading}=UseFetchTeams()
   return (
     <div className='min-h-screen w-full'>
         <div className=' w-full h-[50px] border-b-2 mt-[50px] mb-[50px]  border-white border-opacity-15'>
@@ -10,11 +12,12 @@ export default function Teams() {
         </div>
     <div  class="  flex font-medium items-center flex-wrap  ">
     
-       <ProfileCard image={"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
-       <ProfileCard image={"https://images.pexels.com/photos/220451/pexels-photo-220451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
-       <ProfileCard image={"https://images.pexels.com/photos/220423/pexels-photo-220423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
-       <ProfileCard image={" https://images.pexels.com/photos/220458/pexels-photo-220458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
-       <ProfileCard image={" https://images.pexels.com/photos/220445/pexels-photo-220445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} firstname="Loream" lastname={"Ipsum"} role="Software Engineer" company="SenayTech"/>
-    </div></div>
+    {data?.data.map((team)=>{
+        return(
+          <ProfileCard image={team?.Image} firstname={team?.Name} lastname={""} role={team?.Role} company="SenayTech"/>
+  
+        )
+    })}
+         </div></div>
   )
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 import BlogCard from './BlogCard'
+import UseFetchBlogs from './Hooks/UseFetchBlogs'
 
 
 export default function blog() {
+  const {error,data}=UseFetchBlogs()
   return (
     <div className='min-h-screen w-full'>
           <div className=' w-[80%]  flex justify-between   items-center  mt-[50px] mb-[50px]  pl-[100px]  border-opacity-15'>
@@ -18,8 +20,12 @@ export default function blog() {
     <p className='text-white font-semibold'>get More</p>
 </div>
                    </div>
-                <BlogCard/>
-                 <BlogCard/>
+                   {data?.data.map((blog)=>{
+                    return(
+                      <BlogCard key={blog._id} blog={blog}/>
+                    )
+                   })}
+              
 
     </div>
   )

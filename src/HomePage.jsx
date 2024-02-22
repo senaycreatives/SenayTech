@@ -10,7 +10,7 @@ import animationData from './assets/Animation - 1705334391939.json';
 import chaticon from "./assets/chat.png"
 import axios from 'axios';
 
-import logo from "./assets/logo.jpg"
+import logo from "./assets/ic.png"
 export default function HomePage() {
   const defaultOptions = {
     loop: true,
@@ -164,10 +164,10 @@ const sendMessage = () => {
         </h1>
         <div className=' w-full h-[400px] flex flex-row'>
           <motion.div
-            className='  justify-center backdrop-blur-md shadow-sm rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center h-[350px] mx-4'
-            initial={{ y: 100}}
-            transition={{ type: "spring", duration:100,stiffness: 100 }}
-            whileInView={{y:10}}
+            className='  justify-center backdrop-blur-md duration-500 hover:shadow-orange-500  shadow-sm rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center h-[350px] mx-4'
+            initial={{ y: 170 ,opacity:0}}
+            transition={{ type: "spring", stiffness: 100 }}
+            whileInView={{y:0,opacity:1}}
           >
             <img src={websitedev} className='w-[100px] h-[100px]'/>
             <p className=' text-gray-200 font-semibold  '>Website Development</p>
@@ -181,10 +181,10 @@ const sendMessage = () => {
             </button>
           </motion.div>
           <motion.div
-            className='   backdrop-blur-md shadow-sm rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
-            initial={{ y: 100}}
-            transition={{ type: "spring",delay:0.1, duration:200,stiffness: 100 }}
-            whileInView={{y:10}}
+            className='   backdrop-blur-md shadow-sm rounded-md flex-col duration-500 hover:shadow-orange-600  shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
+            initial={{ y: 170 ,opacity:0}}
+            transition={{ type: "spring",delay:0.1,stiffness: 100 }}
+            whileInView={{y:0,opacity:1}}
           >
             <img src={appdev} className='w-[100px] h-[100px]'/>
             <p className=' text-gray-200 font-semibold   '>App Development</p>
@@ -198,10 +198,10 @@ const sendMessage = () => {
             </button>
           </motion.div>
           <motion.div
-            className='   backdrop-blur-md shadow-sm rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
-            initial={{ y: 100}}
-            transition={{ type: "spring",delay:0.2, duration:200,stiffness: 100 }}
-            whileInView={{y:10}}
+            className='   backdrop-blur-md shadow-sm duration-500 hover:shadow-orange-500  rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
+            initial={{ y: 170 ,opacity:0}}
+            transition={{ type: "spring",delay:0.2, stiffness: 100 }}
+            whileInView={{y:0,opacity:1}}
           >
             <img src={design} className='w-[100px] h-[100px]'/>
             <p className=' text-gray-200 font-semibold '>UI/UX Design</p>
@@ -215,10 +215,11 @@ const sendMessage = () => {
             </button>
           </motion.div>
           <motion.div
-            className='   backdrop-blur-md shadow-sm rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
-            initial={{ y: 100}}
-            transition={{ type: "spring",delay:0.3, duration:200,stiffness: 100 }}
-            whileInView={{y:10}}
+            className='   backdrop-blur-md shadow-sm duration-500 hover:shadow-orange-500  rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
+            initial={{ y: 170 ,opacity:0}}
+            transition={{ type: "spring",delay:0.3,stiffness: 100 }}
+            
+            whileInView={{y:0,opacity:1}}
           ><img src={technical} className='w-[100px] h-[100px]'/>
           <p className=' text-gray-200 font-semibold '>Telegram Bot</p>
           <button
@@ -237,20 +238,20 @@ const sendMessage = () => {
         </h1>
         <div className=' mt-3 flex flex-row'>
           <div className='w-[150px]   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
-            <img src={logo} className='w-[100px] h-[100px]'/>
-            <p className='  text-white  flex  items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
+            <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
+            <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance (uk)</p>
           </div>
           <div className='w-[150px]   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
-            <img src={logo} className='w-[100px] h-[100px]'/>
-            <p className='  text-white  flex  items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
+            <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
+            <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
           </div>
           <div className='w-[150px]   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
-            <img src={logo} className='w-[100px] h-[100px]'/>
-            <p className='  text-white  flex  items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
+            <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
+            <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
           </div>
           <div className='w-[150px]   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
-            <img src={logo} className='w-[100px] h-[100px]'/>
-            <p className='  text-white  flex  items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
+            <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
+            <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
           </div>
         </div>
       </div>
