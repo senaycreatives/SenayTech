@@ -10,7 +10,7 @@ export default function UseFetchBlogs() {
   const fetchData = async () => {
     
     const res = await axios.get(
-      `https://app.ethiopiantheaterassociation.com/blog`
+      `https://api.senaycreatives.com/blog`
     );
 
     return res;

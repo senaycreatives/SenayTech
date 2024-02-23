@@ -4,20 +4,20 @@ import axios from "axios";
 
 
 // /fetchUsers
-export default function UseFetchCatagory() {
+export default function UseFetchFeaturedBlog() {
 
 
   const fetchData = async () => {
     
     const res = await axios.get(
-      `https://api.senaycreatives.com/catagory`,
+      `https://api.senaycreatives.com/blog/featured`,
     );
 
     return res;
   };
 
   return useQuery({
-    queryKey: ["fetchcatagory"],
+    queryKey: ["fetchfeatureblog"],
     queryFn: () => fetchData(),
    
   });

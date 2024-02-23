@@ -57,7 +57,7 @@ export default function HomePage() {
       additionalInfo: messagesentbyme[3]?.message,
   };
   
-  axios.post('https://app.ethiopiantheaterassociation.com/message', { message })
+  axios.post('https://api.senaycreatives.com/message', { message })
   .then((response) => {
      setMessages([
        ...messages,{
@@ -247,14 +247,7 @@ const sendMessage = () => {
             <img src={dialogetiopia} className='w-[100px] h-[100px] mb-[20px]'/>
             <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Dialogue Ethiopia</p>
           </div>
-          <div className='w-[150px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
-            <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
-            <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
-          </div>
-          <div className='w-[150px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
-            <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
-            <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
-          </div>
+         
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ export default function UseFetchProject() {
   const fetchData = async () => {
     
     const res = await axios.get(
-      `https://app.ethiopiantheaterassociation.com/project`
+      `https://api.senaycreatives.com/project`
     );
 
     return res;

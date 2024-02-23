@@ -10,7 +10,7 @@ export default function UseFetchTeams() {
   const fetchData = async () => {
     
     const res = await axios.get(
-      `https://app.ethiopiantheaterassociation.com/admin`
+      `https://api.senaycreatives.com/admin`
     );
 
     return res;
