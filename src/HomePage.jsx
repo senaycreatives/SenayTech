@@ -10,7 +10,9 @@ import animationData from './assets/Animation - 1705334391939.json';
 import chaticon from "./assets/chat.png"
 import axios from 'axios';
 
-import logo from "./assets/ic.png"
+import logo from "./assets/iclogo.jpg"
+import dialogetiopia from './assets/logoaset.svg'
+import { Link } from 'react-router-dom';
 export default function HomePage() {
   const defaultOptions = {
     loop: true,
@@ -140,21 +142,21 @@ const sendMessage = () => {
           <img src={chaticon} className="w-[30px] h-[30px]" alt="profile picture" srcSet="" />
         </div>
       </div>
-      <div className=' w-full h-[500px] flex'>
-        <div className=' flex-1   flex items-center justify-center'>
+      <div className=' w-full h-[500px]  mt-0 flex sm:flex-row  flex-col-reverse'>
+        <div className=' flex-1    flex items-center justify-center'>
           <div className=' flex items-center justify-center   flex-col'>
-            <p className=' font-bold text-white  text-center  w-[470px] text-[26px]'><span className=' text-[50px] font-serif'>E</span>mpowering Digital Transformation: Innovate, Create, Elevate</p>
-            <button className="bg-transparent mt-4 hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded">
+            <p className=' font-bold text-white  text-center  sm:w-[470px] text-[26px]'><span className=' text-[50px] font-serif'>E</span>mpowering Digital Transformation: Innovate, Create, Elevate</p>
+            <Link to='aboutsenay' className="bg-transparent mt-4 hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded">
               Explore Now
-            </button>
+            </Link >
             <p className='  text-white  text-center mt-3 w-[400px]  text-[16px]'>Unlocking the Power of Technology to Shape Tomorrow's Solutions Today.</p>
           </div>
         </div>
-        <div className=' flex-1  flex items-center justify-center'>
+        <div className=' flex-1  flex items-center justify-center   '>
           <Lottie 
             options={defaultOptions}
             height={400}
-            width={500}
+            width={400}
           />
         </div>
       </div>
@@ -162,9 +164,9 @@ const sendMessage = () => {
         <h1 className="mb-2 mt-0 text-5xl font-medium leading-tight text-white">
           Services
         </h1>
-        <div className=' w-full h-[400px] flex flex-row'>
+        <div className=' w-full h-[450px]  shrink-0 flex flex-row   overflow-x-auto  overflow-y-hidden'>
           <motion.div
-            className='  justify-center backdrop-blur-md duration-500 hover:shadow-orange-500  shadow-sm rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center h-[350px] mx-4'
+            className='  justify-center backdrop-blur-md duration-500 hover:shadow-orange-500 shrink-0  shadow-sm rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center h-[350px] mx-4'
             initial={{ y: 170 ,opacity:0}}
             transition={{ type: "spring", stiffness: 100 }}
             whileInView={{y:0,opacity:1}}
@@ -181,7 +183,7 @@ const sendMessage = () => {
             </button>
           </motion.div>
           <motion.div
-            className='   backdrop-blur-md shadow-sm rounded-md flex-col duration-500 hover:shadow-orange-600  shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
+            className='  shrink-0  backdrop-blur-md shadow-sm rounded-md flex-col duration-500 hover:shadow-orange-600  shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
             initial={{ y: 170 ,opacity:0}}
             transition={{ type: "spring",delay:0.1,stiffness: 100 }}
             whileInView={{y:0,opacity:1}}
@@ -198,7 +200,7 @@ const sendMessage = () => {
             </button>
           </motion.div>
           <motion.div
-            className='   backdrop-blur-md shadow-sm duration-500 hover:shadow-orange-500  rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
+            className='   backdrop-blur-md shadow-sm duration-500 hover:shadow-orange-500 shrink-0  rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
             initial={{ y: 170 ,opacity:0}}
             transition={{ type: "spring",delay:0.2, stiffness: 100 }}
             whileInView={{y:0,opacity:1}}
@@ -215,7 +217,7 @@ const sendMessage = () => {
             </button>
           </motion.div>
           <motion.div
-            className='   backdrop-blur-md shadow-sm duration-500 hover:shadow-orange-500  rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
+            className='   backdrop-blur-md shadow-sm duration-500 hover:shadow-orange-500 shrink-0  rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center justify-center h-[350px] mx-4'
             initial={{ y: 170 ,opacity:0}}
             transition={{ type: "spring",delay:0.3,stiffness: 100 }}
             
@@ -236,20 +238,20 @@ const sendMessage = () => {
         <h1 className="mb-2 mt-0 text-5xl text-center font-medium leading-tight text-white">
           Recent Works
         </h1>
-        <div className=' mt-3 flex flex-row'>
-          <div className='w-[150px]   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
+        <div className=' mt-3 flex flex-row  overflow-x-auto overflow-y-hidden items-center justify-center w-full'>
+          <div className='w-[150px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
             <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
             <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance (uk)</p>
           </div>
-          <div className='w-[150px]   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
+          <div className='w-[150px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
+            <img src={dialogetiopia} className='w-[100px] h-[100px] mb-[20px]'/>
+            <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Dialogue Ethiopia</p>
+          </div>
+          <div className='w-[150px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
             <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
             <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
           </div>
-          <div className='w-[150px]   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
-            <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
-            <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
-          </div>
-          <div className='w-[150px]   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
+          <div className='w-[150px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
             <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
             <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance</p>
           </div>

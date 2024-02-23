@@ -26,7 +26,7 @@ function App() {
         <Route path="contact" element={<ContactUsPage/>} />
         <Route path='blog' element={<Blog/>} />
         <Route path='Project' element={<Project/>} />
-        <Route path='blogdetails' element={<BlogsDetails/>}/>
+        <Route path='blogdetails/:id' element={<BlogsDetails/>}/>
       </Routes>
 
 
