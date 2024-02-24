@@ -24,7 +24,7 @@ export default function HomePage() {
   };
 
   const [questions] = useState([
-    'What kind of website/app/bot do you like us to build?',
+        'What kind of website/app/bot do you like us to build?',
         'Give me your Email Address?',
         'Who do we call you?',
         'Any additional info to tell?'
@@ -32,7 +32,7 @@ export default function HomePage() {
 
   const [openchat, setopenchat] = useState(false);
   const [messages, setMessages] = useState([
-    { sender: 'bot', message: 'HELLO !! welcome to Senay Tech' }
+    { sender: 'bot', message: 'HELLO! Welcome to SenayCreatives!' }
  ]);
   const [inputMessage, setInputMessage] = useState('');
   const [currentQuestion, setCurrentQuestion] = useState(0);
