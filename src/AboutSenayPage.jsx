@@ -15,16 +15,16 @@ export default function AboutSenayPage() {
         <div className=' w-full   mt-[50px] mb-[50px]  sm:pl-[100px]  border-opacity-15'>
             <p className='text-white font-bold text-2xl pb-2'>Our Technology Stack</p>
             <div className='flex flex-row w-full items-center mt-3 overflow-x-auto'>
-<div className='h-[40px] w-[120px] rounded-full shrink-0 flex items-center justify-center bg-opacity-20 bg-slate-500'>
+<div className='h-[40px] w-[120px] rounded-full shrink-0 flex items-center justify-center bg-opacity-20 bg-sky-500/100'>
     <p className='text-white font-semibold'>ReactNative</p>
 </div>
-<div className='h-[40px] w-[120px] rounded-full shrink-0 bg-opacity-20 bg-slate-500 ml-3 flex items-center justify-center '>
+<div className='h-[40px] w-[120px] rounded-full shrink-0 bg-opacity-20 bg-orange-500/100 ml-3 flex items-center justify-center '>
     <p className='text-white font-semibold'>Django</p>
 </div>
-<div className='h-[40px] w-[120px] rounded-full shrink-0 bg-opacity-20 bg-slate-500 ml-3 flex items-center justify-center'>
+<div className='h-[40px] w-[120px] rounded-full shrink-0 bg-opacity-20 bg-green-500/100 ml-3 flex items-center justify-center'>
     <p className='text-white font-semibold'>React</p>
 </div>
-<div className='h-[40px] w-[120px] rounded-full shrink-0 bg-opacity-20 bg-slate-500 ml-3 flex items-center justify-center'>
+<div className='h-[40px] w-[120px] rounded-full shrink-0 bg-opacity-20 bg-yellow-500/100 ml-3 flex items-center justify-center'>
     <p className='text-white font-semibold'>Nodejs</p>
 </div>
             </div>
