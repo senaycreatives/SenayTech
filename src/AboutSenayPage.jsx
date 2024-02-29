@@ -14,7 +14,7 @@ export default function AboutSenayPage() {
         </div>
         <div className=' w-full   mt-[50px] mb-[50px]  sm:pl-[100px]  border-opacity-15'>
             <p className='text-white font-bold text-2xl pb-2'>Our Technology Stack</p>
-            <div className='flex flex-row w-full items-center mt-3 overflow-x-auto'>
+            <div className='flex flex-row w-full items-center mt-3 overflow-x-auto myscroll'>
 <div className='h-[40px] w-[120px] rounded-full shrink-0 flex items-center justify-center bg-opacity-20 bg-sky-500/100'>
     <p className='text-white font-semibold'>ReactNative</p>
 </div>

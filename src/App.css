@@ -17,20 +17,22 @@
     background: #555;
   }
   .myscroll::-webkit-scrollbar {
-    height: 9px;
+    height: 1px;
   }
   
   /* Track */
  .myscroll ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background:  transparent;
   }
   
   /* Handle */
  .myscroll::-webkit-scrollbar-thumb {
-    background: rgba(26, 0, 44, 0.37);
+    background:  transparent;
     opacity: 0.5;
     border-radius: 30px;
   }
   .myscroll::-webkit-scrollbar-track {
-    background: rgba(92, 4, 155, 0.466);
+    background:  transparent;
+
   }
+ 

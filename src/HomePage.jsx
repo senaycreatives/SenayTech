@@ -158,7 +158,7 @@ const sendMessage = () => {
         <h1 className="mb-2 mt-0 text-5xl font-medium leading-tight text-white">
           Services
         </h1>
-        <div className=' w-full h-[450px]  shrink-0 flex flex-row   overflow-x-auto  overflow-y-hidden'>
+        <div className=' w-full h-[450px]  shrink-0 flex flex-row   overflow-x-auto myscroll overflow-y-hidden'>
           <motion.div
             className='  justify-center backdrop-blur-md duration-500 hover:shadow-orange-500 shrink-0  shadow-sm rounded-md flex-col shadow-gray-200 w-[250px] mt-[20px] flex items-center h-[350px] mx-4'
             initial={{ y: 170 ,opacity:0}}
