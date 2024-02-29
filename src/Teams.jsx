@@ -7,9 +7,9 @@ export default function Teams() {
   const { data,error,isLoading}=UseFetchTeams()
   return (
     <div className='min-h-screen w-full'>
-        <div className=' w-full h-[50px] border-b-2 mt-[50px] mb-[50px]  border-white border-opacity-15'>
+         <div className=' w-full h-[50px] border-b-2 mt-[50px] mb-[50px]  border-white border-opacity-15'>
             <p className='text-white font-bold text-3xl'>OUR TEAMS</p>
-        </div>
+         </div>
     <div  class="  flex font-medium items-center flex-wrap  ">
       {isLoading&&
       <div className='w-full flex justify-center'>
@@ -23,7 +23,7 @@ export default function Teams() {
     
     {data?.data.map((team)=>{
         return(
-          <ProfileCard image={team?.Image} instagram={team?.instalinks} portfolio={team?.portfolio} github={team?.githublink} firstname={team?.Name} lastname={""} role={team?.Role} company="SenayTech"/>
+          <ProfileCard image={team?.Image} instagram={team?.instalinks} portfolio={team?.portfolio} github={team?.githublink} firstname={team?.Name} lastname={""} role={team?.Role} company="SenayCreatives"/>
   
         )
     })}
