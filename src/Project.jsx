@@ -7,12 +7,12 @@ import UseFetchProjectWithCatagory from './Hooks/UseFetchProjectWithCatagory'
 export default function Project() {
     const [catagory,setcatagory]=useState('ReactNative')
     const {data,error,isLoading}=UseFetchCatagory()
-    const [selectedcatagory,setselectedcatagory]=useState(data?.data[0]._id)
+    const [selectedcatagory,setselectedcatagory]=useState(data?.data[3]._id)
     const  {data:project,error:err,isLoading:loading,refetch}=UseFetchProjectWithCatagory(selectedcatagory)
 
     useEffect(()=>{
         const selectDefault=()=>{
-            setselectedcatagory(data?.data[0]._id)
+            setselectedcatagory(data?.data[1]._id)
         }
     selectDefault()
     },[data])
@@ -21,8 +21,8 @@ export default function Project() {
   },[selectedcatagory])
   return (
     <div className='min-h-screen w-full'>
-        <div className=' w-[80%] flex justify-center items-center'>
-        <div className='flex flex-row items-center mt-3'>
+        <div className=' sm:w-[80%] flex justify-center items-center'>
+        <div className='flex flex-row lg:w-full items-center justify-center mt-3 overflow-x-auto overflow-hidden'>
         {isLoading&&
       <div className='w-full flex justify-center'>
     <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@ export default function Project() {
             {
                 data?.data.map((item)=>{
                     return(
-                        <div onClick={()=>setselectedcatagory(item._id)} className={`h-[30px] cursor-pointer  hover:bg-indigo-500 ${selectedcatagory===item._id && 'bg-orange-900'} w-[120px] rounded-full flex items-center justify-center mx-2 bg-opacity-50 bg-indigo-300`}>
+                        <div onClick={()=>setselectedcatagory(item._id)} className={`h-[30px] shrink-0 cursor-pointer  hover:bg-indigo-500 ${selectedcatagory===item._id && 'bg-orange-900'} w-[120px] rounded-full flex items-center justify-center mx-2 bg-opacity-50 bg-indigo-300`}>
     <p className='text-white font-semibold'>{item.Name}</p>
 </div>
                     )
@@ -48,7 +48,7 @@ export default function Project() {
         <div className=' sm:w-[80%] flex justify-center items-center'>
             <p className='text-white font-bold text-3xl mt-3'>Explore our projects</p>
         </div>
-        <div className='myscroll sm:w-[80%]  overflow-x-scroll  flex flex-row sm:ml-[100px] mt-10 h-[380px] '>
+        <div className='myscroll sm:w-[80%]  overflow-x-auto flex flex-row sm:ml-[100px] mt-10 h-[380px] '>
         {loading&&
       <div className='w-full flex justify-center'>
     <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,8 +71,8 @@ export default function Project() {
                     <img src={item.image} className=' rounded-xl overflow-hidden  w-[280px] h-[180px]'/>
                 </div>
                 <div>
-                    <p className='text-white font-bold text-xl mt-3'> {item.Title}  </p>
-                    <p className='text-gray-400 font-semibold '> {item.Description} </p>
+                    <p className='text-white font-bold text-xl mt-3 line-clamp-1'> {item.Title}  </p>
+                    <p className='text-gray-400 font-semibold  line-clamp-2'> {item.Description} </p>
                     <div className='h-[40px] w-[80%] flex items-center justify-center rounded-full bg-opacity-50 bg-indigo-300 mt-3'>
                         <p className='text-white font-semibold'>Read More</p>
                     </div>

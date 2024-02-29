@@ -1,28 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Lottie from 'react-lottie';
+
 import { motion } from "framer-motion"
 import websitedev from "./assets/settings.png"
 import appdev from "./assets/app-settings.png"
 import design from "./assets/web-design.png"
 import technical from "./assets/technical-support.png"
 import './App.css'
-import animationData from './assets/Animation - 1705334391939.json';
+
 import chaticon from "./assets/chat.png"
 import axios from 'axios';
+import senaylogo from './assets/senay.svg'
 
 import logo from "./assets/iclogo.jpg"
 import dialogetiopia from './assets/logoaset.svg'
 import { Link } from 'react-router-dom';
 export default function HomePage() {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice',
-    },
-  };
-
   const [questions] = useState([
         'What kind of website/app/bot do you like us to build?',
         'Give me your Email Address?',
@@ -32,11 +24,12 @@ export default function HomePage() {
 
   const [openchat, setopenchat] = useState(false);
   const [messages, setMessages] = useState([
-    { sender: 'bot', message: 'HELLO! Welcome to SenayCreatives!' }
+    { sender: 'bot', message: 'Hello! Welcome to SenayCreatives Telegram Bot I will help you  deliver message to senay teams!' }
  ]);
   const [inputMessage, setInputMessage] = useState('');
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const messagesEndRef = useRef(null);
+  
 
   const scrollToBottom = () => {
     if (messagesEndRef.current) {
@@ -62,7 +55,7 @@ export default function HomePage() {
      setMessages([
        ...messages,{
          sender: 'bot',
-         message: response.data.message
+         message: "Your Message has been sent To Senay Teams successfully. We will get back to you shortly."
        }
      ])
      setCurrentQuestion(0)
@@ -116,10 +109,10 @@ const sendMessage = () => {
   return (
     <div className=' w-[96%] relative  flex-col flex overflow-hidden   rounded-md   h-[1500px]'>
       {openchat &&  
-        <div className='w-[400px] backdrop-blur-sm bg-opacity-25 overflow-hidden shadow-white shadow-sm h-[350px] z-30 bottom-[53px] right-[50px] rounded-md fixed bg-black flex flex-col items-center justify-between '>
+        <div className='sm:w-[300px] w-[94%] backdrop-blur-sm overflow-hidden shadow-white shadow-sm h-[350px] z-30 bottom-[53px] right-0 sm:right-[50px] rounded-md fixed bg-white flex flex-col items-center justify-between '>
           <div  className=' chat w-full h-[300px]  overflow-y-auto flex flex-col '>
             {messages?.map((message, index) => (
-              <div key={index} className={` px-4 w-[80%] min-h-[50px] rounded-md flex items-center  text-[14px]  text-white mt-2 ${message?.sender === 'me' ? 'self-end bg-indigo-700 ' : 'self-start bg-indigo-600'}`}>{message?.message}</div>
+              <div key={index} className={` px-4 w-[80%]  py-2  rounded-md flex items-center  text-[14px]  mt-2 ${message?.sender === 'me' ? 'self-end bg-indigo-700  text-white shadow-md' : 'self-start  bg-white text-black  shadow-md'}`}>{message?.message}</div>
             ))}
  
             <div ref={messagesEndRef} className={` w-[80%] min-h-[50px] rounded-md flex items-center   text-white mt-2 ${'ddr' === 'me' ? 'self-end bg-indigo-700 ' : 'self-start '}`}></div>
@@ -127,8 +120,9 @@ const sendMessage = () => {
           </div>
           <div className=' w-full flex flex-row '>
             <textarea
-              className=' w-[80%] h-[40px] outline-blue-500 bg-gray-100 overflow-hidden'
+              className=' w-[80%] h-[40px]  outline-none bg-gray-100 overflow-hidden'
               onChange={(e) => setInputMessage(e.target.value)}
+              onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
               value={inputMessage}
               placeholder="Enter your text here..." // Placeholder text
             />
@@ -149,15 +143,15 @@ const sendMessage = () => {
             <Link to='aboutsenay' className="bg-transparent mt-4 hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border border-white hover:border-transparent rounded">
               Explore Now
             </Link >
+            
             <p className='  text-white  text-center mt-3 w-[400px]  text-[16px]'>Unlocking the Power of Technology to Shape Tomorrow's Solutions Today.</p>
           </div>
         </div>
-        <div className=' flex-1  flex items-center justify-center   '>
-          <Lottie 
-            options={defaultOptions}
-            height={400}
-            width={400}
-          />
+        
+       
+        <div className=' sm:flex flex-1   hidden items-center justify-center   '>
+          <img src={senaylogo} className="w-[500px] h-[500px]" alt="profile picture" srcSet="" />
+          
         </div>
       </div>
       <div className='w-full mt-[100px] h-[400px] flex-col items-center flex'>
@@ -239,11 +233,11 @@ const sendMessage = () => {
           Recent Works
         </h1>
         <div className=' mt-3 flex flex-row  overflow-x-auto overflow-y-hidden items-center justify-center w-full'>
-          <div className='w-[150px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
+          <div className='w-[170px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
             <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
             <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance (uk)</p>
           </div>
-          <div className='w-[150px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
+          <div className='w-[170px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
             <img src={dialogetiopia} className='w-[100px] h-[100px] mb-[20px]'/>
             <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Dialogue Ethiopia</p>
           </div>

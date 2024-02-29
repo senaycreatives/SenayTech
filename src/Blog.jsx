@@ -9,6 +9,7 @@ export default function blog() {
   const {error:error2,data:data2,isLoading:isLoading2}=UseFetchFeaturedBlog()
   return (
     <div className='min-h-screen w-full'>
+     
           <div className=' sm:w-[80%]   flex justify-between   items-center  mt-[50px] mb-[50px]  sm:pl-[100px]  border-opacity-15'>
             <p className='text-white font-bold text-3xl pb-2'>Featured Blog</p>
             <div className='h-[37px] w-[120px] rounded-full bg-opacity-50 bg-slate-500 ml-3 flex items-center justify-center'>
@@ -47,7 +48,7 @@ export default function blog() {
 </div>
 
       }
-                   {data?.data.map((blog)=>{
+                   {data?.data.slice(0,5).map((blog)=>{
                     return(
                       <BlogCard key={blog._id} blog={blog}/>
                     )

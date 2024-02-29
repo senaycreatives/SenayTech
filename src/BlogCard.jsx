@@ -20,6 +20,6 @@ export default function BlogCard({blog}) {
     
     </div>
     
-                       </Link>
+     </Link>
   )
 }

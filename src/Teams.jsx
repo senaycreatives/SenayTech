@@ -23,7 +23,7 @@ export default function Teams() {
     
     {data?.data.map((team)=>{
         return(
-          <ProfileCard image={team?.Image} firstname={team?.Name} lastname={""} role={team?.Role} company="SenayTech"/>
+          <ProfileCard image={team?.Image} instagram={team?.instalinks} portfolio={team?.portfolio} github={team?.githublink} firstname={team?.Name} lastname={""} role={team?.Role} company="SenayTech"/>
   
         )
     })}

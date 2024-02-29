@@ -9,7 +9,7 @@ export default function AboutSenayPage() {
         </div>
         <div className=' w-full mt-[50px] mb-[50px]  sm:pl-[100px]  border-opacity-15 '>
             <p className='text-gray-200  ml-2  text-[15px] pb-2 sm:w-[83%] font-semibold   space-y-2'>
-                Senay Creatives is a tech company that develops web and mobile applications. We have been working on web and mobile application development for 10 years.our Team is dedicated to provide web and mobile application development.
+                Senay Creatives is a tech company that develops web and mobile applications. We have been working on web and mobile application development for different companies.our Team is dedicated to provide web and mobile application development.
             </p>
         </div>
         <div className=' w-full   mt-[50px] mb-[50px]  sm:pl-[100px]  border-opacity-15'>
