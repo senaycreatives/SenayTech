@@ -234,7 +234,7 @@ const sendMessage = () => {
         </h1>
         <div className=' mt-3 flex flex-row  overflow-x-auto overflow-y-hidden items-center justify-center w-full'>
           <div className='w-[170px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>
-            <img src={logo} className='w-[100px] h-[100px] mb-[20px]'/>
+            <img src={logo} className='w-[100px] h-[100px] mb-[10px]'/>
             <p className='  text-white  flex   items-center justify-center  font-thin text-center text-[15px]'>Industrial-clearance (uk)</p>
           </div>
           <div className='w-[170px] shrink-0   h-[150px] flex flex-col  items-center justify-center  mx-2  '>

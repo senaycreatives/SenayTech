@@ -50,10 +50,10 @@ function App() {
                   <h2 class="mb-6 text-sm font-semibold  text-white uppercase dark:text-white">Address</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <p>+251 926583499</p>
+                          <p>+251 92 658 3499</p>
                       </li>
                       <li>
-                          <p>+251 926583499</p>
+                          <p>+251 95 495 6260</p>
                       </li>
                   </ul>
               </div>
@@ -96,7 +96,7 @@ function App() {
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center text-white dark:text-gray-400">© 2023 <a href="#" class="hover:underline text-white">SenayTech™</a>. All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center text-white dark:text-gray-400">© 2023 <a href="#" class="hover:underline text-white">SenayCreatives™</a>. All Rights Reserved.
           </span>
           <div class="flex mt-4 sm:justify-center sm:mt-0">
               <a href="https://www.instagram.com/senaycreatives?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-500 hover: text-white dark:hover:text-white">
