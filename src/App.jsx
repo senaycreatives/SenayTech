@@ -17,12 +17,13 @@ function App() {
 
   return (
    
-    <div className=' min-h-screen p-[1%]  poppins-regular  overflow-x-hidden flex flex-col items-center justify-center bg-gradient-to-r from-gray-800 to-slate-700'>
+    <div className=' min-h-screen p-[1%]  poppins-regular  overflow-x-hidden flex flex-col items-center justify-center  bg-black'>
        <HeaderComponent/>
 
     <Routes>
         <Route path="/" element={ <HomePage/> } />
         <Route path="team" element={<Teams/>} />
+   
         <Route path='aboutsenay' element={<AboutSenayPage/>} />
         <Route path="contact" element={<ContactUsPage/>} />
         <Route path='blog' element={<Blog/>} />

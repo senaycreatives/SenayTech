@@ -6,75 +6,11 @@ import { Link, useParams } from 'react-router-dom';
 import UseFetchBlogs from './Hooks/UseFetchBlogs';
 import AdsComponent from './AdsenseComponent';
 import ReactQuill from 'react-quill';
+
 import 'react-quill/dist/quill.bubble.css'
 export default function BlogDetailsPage() {
   const { id } = useParams();
-  const code =`<!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Exploring the Hidden Gems of Tuscany: A Journey through Italy's Heartland</title>
-      <style>
-          body {
-              font-family: Arial, sans-serif;
-              line-height: 1.6;
-              margin: 0;
-              padding: 0;
-            
-          }
-          .container {
-              max-width: 800px;
-              margin: 0 auto;
-              padding: 20px;
-               background-color: #f8f8f8;
-          }
-          h1, h2, h3, h4, h5, h6 {
-              font-family: "Times New Roman", serif;
-              margin-top: 20px;
-          }
-          p {
-              margin-bottom: 20px;
-          }
-          img {
-              max-width: 100%;
-              height: auto;
-              margin-bottom: 20px;
-          }
-      </style>
-  </head>
-  <body>
-      <div class="container">
-          <h1>Exploring the Hidden Gems of Tuscany: A Journey through Italy's Heartland</h1>
-          
-          <h2>The Charm of Tuscany</h2>
-          <p>Nestled in the heart of central Italy, Tuscany captivates visitors with its rolling hills, vineyards, and medieval hilltop towns. Beyond its picturesque landscapes, Tuscany offers a glimpse into Italy's cultural heritage and traditional way of life.</p>
-          
-          <h2>Florence: The Cradle of the Renaissance</h2>
-          <p>No trip to Tuscany is complete without a visit to Florence, the birthplace of the Renaissance. Wander through the narrow cobblestone streets of the historic center, marvel at masterpieces in the Uffizi Gallery, and admire the architectural splendor of the Duomo and Palazzo Vecchio.</p>
-          
-          <h2>Siena: A Medieval Masterpiece</h2>
-          <p>Venture south to Siena, where time seems to stand still amidst its medieval charm. Explore the winding alleyways of the old town, visit the magnificent Siena Cathedral, and witness the thrilling Palio horse race in the Piazza del Campo, a tradition dating back centuries.</p>
-          
-          <h2>Chianti: Wine and Gastronomy</h2>
-          <p>Escape to the rolling hills of the Chianti countryside, where vineyards and olive groves stretch as far as the eye can see. Sample world-class wines at family-run wineries, savor farm-to-table cuisine in rustic trattorias, and immerse yourself in the authentic flavors of Tuscany.</p>
-          
-          <h2>Lucca: A Hidden Gem</h2>
-          <p>Discover the enchanting walled city of Lucca, tucked away amidst olive trees and Renaissance villas. Walk or bike along the city's ancient walls, explore its charming piazzas and churches, and indulge in a leisurely stroll through the lush Giardini Botanici.</p>
-          
-          <h2>Pienza: Renaissance Splendor</h2>
-          <p>Step back in time to the Renaissance era in Pienza, a UNESCO World Heritage Site renowned for its architectural beauty and panoramic views of the Val d'Orcia. Explore the historic center, visit the stunning Palazzo Piccolomini, and sample the town's famous pecorino cheese.</p>
-          
-          <h2>Embrace the Tuscan Lifestyle</h2>
-          <p>In Tuscany, life moves at a slower pace, allowing visitors to savor each moment and embrace the simple pleasures of la dolce vita. Whether it's sipping espresso at a sidewalk café, browsing local markets for artisanal goods, or watching the sunset over the Tuscan countryside, every experience is a celebration of the good life.</p>
-          
-          <h2>Conclusion</h2>
-          <p>Tuscany beckons with its timeless beauty, cultural riches, and warm hospitality. As you explore its hidden gems and ancient wonders, you'll find yourself immersed in a world of art, history, and gastronomy unlike any other. So pack your bags, follow the winding roads, and let Tuscany cast its spell on you.</p>
-      </div>
-  </body>
-  </html>
-  
-  `
+
   
   const { data, isLoading, error } = UseFetchBlogDetails(id);
   const { data: data2, isLoading: isLoading2, error: error2 } = UseFetchBlogs()
